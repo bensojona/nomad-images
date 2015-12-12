@@ -23,7 +23,7 @@ WORKDIR /src
 ADD . /src
 
 # Expose port
-EXPOSE  8080
+EXPOSE 8080
 
 # Run app using nodemon
-CMD ["nodemon", "/src/index.js"]
+CMD nodemon /src/index.js >>/var/log/nodejs.log 2>&1

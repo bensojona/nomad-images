@@ -1,5 +1,5 @@
 {
-  "name": "node-counter",
+  "name": "nodejs",
   "version": "1.0.0",
   "description": "Node.js Application Counter",
   "main": "index.js",

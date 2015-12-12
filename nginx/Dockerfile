@@ -56,4 +56,4 @@ ADD consul_template/nginx.ctmpl /opt/consul_template/
 EXPOSE 80
 
 # Set the default command to execute when creating a new container
-CMD service nginx start ; /usr/local/bin/consul-template -config "/etc/consul_template.d" >>/var/log/consul_template.log 2>&1
+CMD /usr/local/bin/consul-template -config "/etc/consul_template.d" >>/var/log/consul_template.log 2>&1
